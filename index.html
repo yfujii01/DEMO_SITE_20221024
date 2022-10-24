@@ -1,6 +1,6 @@
 <h1>(デモ)3年保証登録データ</h1>
-<div>機種品番 : <input type="text" id="hinban"/> シリアルNo : <input type="text" id="serial"/> <button>検索</button></div>
-<div><textarea rows="10" cols="33"></textarea></div>
+<div>機種品番 : <input type="text" id="hinban"/> シリアルNo : <input type="text" id="serial"/> <button onclick="btnClick">検索</button></div>
+<div><textarea id="area" rows="10" cols="33"></textarea></div>
 
 <script>
   /**
@@ -22,5 +22,9 @@
   window.onload = function() {
     document.querySelector("#hinban").value = getParam("hinban");
     document.querySelector("#serial").value = getParam("serial");
+  }
+  
+  function btnClick() {
+    document.querySelector("#area").value="xxxxxxxxxxxxxxxxxx\nxxxxxxxxxxxxxxxxxxxxxx\nxxxxxxxxxxxxxxxxxx\n";
   }
 </script>
